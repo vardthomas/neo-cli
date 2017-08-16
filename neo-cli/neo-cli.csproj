@@ -22,6 +22,10 @@
     <DebugSymbols>False</DebugSymbols>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_MainNet|AnyCPU'" />
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_TestNet|AnyCPU'" />
+
   <ItemGroup>
     <None Update="config.json;protocol.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
